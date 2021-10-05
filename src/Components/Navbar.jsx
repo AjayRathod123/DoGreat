@@ -1,15 +1,21 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useHistory } from "react-router";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "../CSS/Navbar.css";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+  const history = useHistory();
+
+  const home = () => {
+    history.push("/");
+  };
 
   return (
     <div className="navbar">
       <div className="navbar__logo">
-        <p className="nav__logo">
+        <p className="nav__logo" onClick={home}>
           <span className="nav__a">D</span>O <span className="nav__r">G</span>
           REAT
         </p>

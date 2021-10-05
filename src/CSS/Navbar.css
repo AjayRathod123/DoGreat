@@ -7,7 +7,6 @@
   text-align: center;
   padding-left: 100px;
   padding-right: 100px;
-  position: fixed;
 }
 
 .navbar__logo {
@@ -17,6 +16,7 @@
   /* margin-left: 50px; */
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .nav__a {
